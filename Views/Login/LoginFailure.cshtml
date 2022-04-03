@@ -1,0 +1,11 @@
+﻿@model RegisterAndLoginApp.Models.UserModel
+
+<div>
+    <h4>You failed to login</h4>
+    <hr />
+    <p>Hi @Model.UserName, You failed with the password @Model.Password!</p>
+</div>
+<div>
+    @Html.ActionLink("Edit","Edit", new {/* id = Model.PrimaryKey */})
+    <a asp-action="Index">Back to List</a>
+</div>
